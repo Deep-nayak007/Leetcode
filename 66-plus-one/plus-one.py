@@ -1,14 +1,19 @@
-class Solution:
-    def plusOne(self, digits: List[int]) -> List[int]:
-        pos = len(digits) - 1
-        while (pos) >= 0:
-            if digits[pos] < 9:      
-                digits[pos] = digits[pos] + 1
-                return digits
-            else:
-                digits[pos] = 0
-                pos = pos - 1
-        return [1] + digits            
+class Solution(object):
+    def plusOne(self, digits):
+        """
+        :type digits: List[int]
+        :rtype: List[int]
+        """
+        n = 0
+        for i in digits:
+            n  = n * 10 + i
+        m = n + 1
+        back_to_digits = [int(char) for char in str(m)]
+        return(back_to_digits)
+
+
+
+
 
 
         
