@@ -7,7 +7,7 @@ class Solution(object):
         """
         x = sorted(nums)
         m = []
-        for i in range(len(nums)):
+        for i in range(len(x)):
             if (target == x[i]):
                 m.append(i)
 
