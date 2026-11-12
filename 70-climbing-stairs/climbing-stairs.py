@@ -12,4 +12,4 @@ class Solution(object):
             third = first + second
             first = second
             second = third
-        return third        
+        return second        
